@@ -6,7 +6,7 @@
 <div class="clear"></div>
 
 
-<%= simple_form_for @answer, :url => '#' do |f| %>
+<%= simple_form_for @answer, :url => answers_path(@answer) do |f| %>
 	<%= f.input :response %>
 	<%= f.submit "What is your response?", :class => 'btn btn-primary' %>
 <% end %>
