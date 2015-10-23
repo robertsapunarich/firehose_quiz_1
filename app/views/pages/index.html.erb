@@ -1,4 +1,12 @@
-<div class="headline col-lg-10 col-lg-offset-1">This is my solution to Quiz #1. Did I do everything right?
+<div class="headline col-lg-10 col-lg-offset-1">This is my solution to Quiz #2. Did I do everything right? Also, I apologize for not being a designer.
 <br/>
 -Robert Sapunarich
 </div>
+
+<div class="clear"></div>
+
+
+<%= simple_form_for @answer, :url => '#' do |f| %>
+	<%= f.input :response %>
+	<%= f.submit "What is your response?", :class => 'btn btn-primary' %>
+<% end %>
