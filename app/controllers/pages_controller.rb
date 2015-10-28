@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 	
 	def index
-		@answer = Answer.new
+    @answer = Answer.new
 	end
 
 end

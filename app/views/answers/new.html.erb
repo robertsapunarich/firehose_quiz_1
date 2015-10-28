@@ -1,0 +1,11 @@
+<h1>Did I do this right?</h1>
+
+<%= simple_form_for @answer do |f| %>
+	<%= f.input :response %>
+	<%= f.submit 'What is your response?', :class => 'btn btn-primary' %>
+<% end %>
+
+<br />
+<br />
+
+<%= @answer.response %>

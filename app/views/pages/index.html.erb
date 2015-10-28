@@ -1,12 +1,4 @@
-<div class="headline col-lg-10 col-lg-offset-1">This is my solution to Quiz #2. Did I do everything right? Also, I apologize for not being a designer.
+<div class="headline col-lg-10 col-lg-offset-1">This is my solution to Quiz #2. Did I do everything right? Also, I apologize for not being much of a designer. I even thought about putting comic sans here. Anyway, let me know how I did by clicking <%= link_to 'here', new_answer_path %>
 <br/>
 -Robert Sapunarich
 </div>
-
-<div class="clear"></div>
-
-
-<%= simple_form_for @answer, :url => answers_path(@answer) do |f| %>
-	<%= f.input :response %>
-	<%= f.submit "What is your response?", :class => 'btn btn-primary' %>
-<% end %>
