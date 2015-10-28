@@ -1,7 +1,7 @@
 class AnswersController < ApplicationController
 
 	def index
-	 @answer = Answer.order("RANDOM()").first
+	 @answer = Answer.first
   end
 
   def new
@@ -11,6 +11,10 @@ class AnswersController < ApplicationController
   def create
     Answer.create(answer_params)
     redirect_to new_answer_path
+  end
+
+  def show
+    Answer.last
   end
 
   private
